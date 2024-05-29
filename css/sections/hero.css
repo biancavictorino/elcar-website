@@ -1,0 +1,218 @@
+.header {
+    background-color: inherit;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    background:  radial-gradient(circle at top left, rgba(128, 128, 128, 0.8), transparent 28%);
+    overflow: hidden;
+}
+
+.header-container {
+    background-color: inherit;
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container img {
+    background-color: transparent;
+    height: 1.4rem;
+    width: 4rem;
+}
+
+.header-nav {
+    background-color: transparent;
+    font-family: var(--exo);
+    display: flex;
+    gap: 4rem;
+}
+
+.header-nav button {
+    color: var(--color-white);
+    outline: 0;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.header-nav svg {
+    background-color: transparent;
+    fill: var(--color-white);
+    height: 1.2rem;
+    width: 1.2rem;
+    display: block;
+}
+
+#mode-toggle svg path {
+    display: block;
+}
+
+#mode-toggle svg:hover path {
+    filter: drop-shadow(0 0 20px rgba(65, 119, 220, 0.8)) drop-shadow(0 0 30px rgba(65, 119, 220, 0.8)) drop-shadow(0 0 40px rgba(65, 119, 220, 0.8)) drop-shadow(0 0 50px rgba(65, 119, 220, 0.8)) drop-shadow(0 0 60px rgba(65, 119, 220, 0.8));
+    fill: var(--first-color);
+  }
+
+
+.header-nav .toggle-icon:hover {
+    /* box-shadow: 0 0 20px rgba(65, 119, 220, 0.8), 0 0 30px rgba(65, 119, 220, 0.8); */
+    filter: drop-shadow(0 0 20px rgba(65, 119, 220, 0.8)) drop-shadow(0 0 30px rgba(65, 119, 220, 0.8)) drop-shadow(0 0 40px rgba(65, 119, 220, 0.8)) drop-shadow(0 0 50px rgba(65, 119, 220, 0.8)) drop-shadow(0 0 60px rgba(65, 119, 220, 0.8));
+    fill: var(--first-color);
+}
+
+.header-nav .nav-link {
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 0.95rem;
+}
+
+.header-nav .nav-link:hover {
+    text-shadow: 0 0 20px rgba(65, 119, 220, 0.8), 0 0 30px rgba(65, 119, 220, 0.8);
+    color: var(--first-color);
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.hero-main {
+    /* height: auto; */
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--color-white);
+    padding: 2.5rem 2.5rem 0 2.5rem;
+    background:  radial-gradient(circle at top left, rgba(128, 128, 128, 0.8), transparent 25%), radial-gradient(circle at bottom right, rgba(97, 97, 97, 0.8), transparent 25%);
+}
+
+
+.hero-main h1 {
+    background-color: transparent;
+    padding: 0.25rem;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.hero-main h2 {
+    background-color: transparent;
+    font-weight: 500;
+}
+
+.hero-main .p-tag {
+    background-color: inherit;
+    color: var(--text-color);
+    display: flex;
+    flex: row;
+    gap: 0.55rem;
+}
+
+.p-tag img {
+    background-color: inherit;
+}
+
+.p-tag p {
+    background-color: inherit;
+}
+
+.main-car {
+    padding-top: 0.75rem;
+    background-color: transparent;
+}
+
+.main-car img {
+    background-color: transparent;
+}
+
+.hero-main .sub-content {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.hero-main .sub-content .content {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-main .sub-content .content .icon {
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--container-color);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--first-color);
+}
+
+.hero-main .sub-content .content .icon svg {
+    background-color: transparent;
+    fill: var(--color-white);
+    display: block;
+}
+
+.hero-main .sub-content .content .icon .km {
+    background-color: transparent;
+    font-size: 0.65rem;
+}
+
+.hero-main .sub-content .content h1 {
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.hero-main .sub-content .content p {
+    background-color: transparent;
+    font-size: 0.55rem;
+    color: var(--text-color);
+}
+
+.start {
+    background-color: inherit;
+    border: 3px solid #02DB8A;
+    box-shadow: 0 0 15px rgba(2, 219, 138, 0.5), 0 0 25px rgba(2, 219, 138, 0.3), 0 0 35px rgba(2, 219, 138, 0.2), 0 0 45px rgba(2, 219, 138, 0.1);
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    border-radius: 5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.start button {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    padding: 0.65rem;
+    outline: 0;
+    border: 2px solid #02DB8A;
+    background-color: inherit;
+    color: var(--color-white);
+    font-size: 0.65rem;
+    font-family: var(--orbitron);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start button:hover {
+    background-color: #026440;
+    color: var(--color-white);
+}
