@@ -2,6 +2,7 @@
 
 /* Sections */
 @import url('sections/hero.css');
+@import url('sections/about.css');
 
 :root {
     --orbitron: "Orbitron", serif;
