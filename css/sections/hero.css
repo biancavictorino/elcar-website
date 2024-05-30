@@ -79,6 +79,16 @@
 
 .menu-toggle {
     display: none;
+    flex-direction: column;
+    gap: 0.313rem;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 1.563rem;
+    height: 0.188rem;
+    background-color: white;
 }
 
 .hero-main {
@@ -95,7 +105,7 @@
 }
 
 
-.hero-main h1 {
+.hero-main .title h1 {
     background-color: transparent;
     padding: 0.25rem;
     font-weight: 500;
@@ -200,7 +210,7 @@
     height: 4.5rem;
     width: 4.5rem;
     border-radius: 50%;
-    padding: 0.65rem;
+    padding: 0.5rem;
     outline: 0;
     border: 2px solid #02DB8A;
     background-color: inherit;
@@ -215,4 +225,72 @@
 .start button:hover {
     background-color: #026440;
     color: var(--color-white);
+}
+
+/* Mobile View */
+@media only screen and (max-width: 767px) {
+    .header-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 3.75rem;
+        right: 125rem;
+        background-color: white;
+        padding: 0.625rem;
+        border-radius: 0.5rem;
+    }
+
+    .header-nav.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .hero-main .title {
+        display: flex;
+        background-color: transparent;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .hero-main .sub-title {
+        font-size: 1.1rem;
+    }
+
+    .hero-main .p-tag {
+        font-size: 0.80rem;
+    }
+
+    .hero-main .p-tag img {
+        height: 1rem;
+    }
+
+    .main-car img {
+        height: 9.5rem;
+        width: 17rem;
+    }
+
+    .hero-main .sub-content .content h1 {
+        font-size: 1rem;
+        padding: 0.55rem;
+    }
+
+    .start {
+        height: 4rem;
+        width: 4rem;
+        margin: 2;
+    }
+
+    .start button {
+        height: 3.5rem;
+        width: 3.5rem;
+        padding: 0.1rem;
+    }
+
+
 }

@@ -1,8 +1,11 @@
 const modeToggleBtn = document.getElementById('mode-toggle');
 const body = document.body;
+const menuToggle = document.getElementById('menu-toggle');
+const headerNav = document.querySelector('.header-nav');
 
 modeToggleBtn.addEventListener('click', () => {
-    body.classList.add('light-mode');
+    body.classList.toggle('light-mode');
+    body.classList.toggle('dark-mode');
 
     if (body.classList.contains('light-mode')) {
         modeToggleBtn.innerHTML = `<svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
@@ -15,4 +18,8 @@ modeToggleBtn.addEventListener('click', () => {
         </svg>
         `;
       }
+});
+
+menuToggle.addEventListener('click', () => {
+  headerNav.classList.toggle('active');
 });
