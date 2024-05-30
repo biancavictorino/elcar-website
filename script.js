@@ -19,7 +19,3 @@ modeToggleBtn.addEventListener('click', () => {
         `;
       }
 });
-
-menuToggle.addEventListener('click', () => {
-  headerNav.classList.toggle('active');
-});
