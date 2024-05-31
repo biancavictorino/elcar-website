@@ -248,6 +248,10 @@
         display: flex;
     }
 
+    .mobile-nav.active {
+        display: flex;
+    }
+
     .hero-main .title {
         display: flex;
         background-color: transparent;

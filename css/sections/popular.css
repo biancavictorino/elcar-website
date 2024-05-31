@@ -1,0 +1,130 @@
+.popular {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    color: var(--color-white);
+}
+
+.popular h1, h2, p, svg, img {
+    background-color: transparent;
+}
+
+.popular .title {
+    width: 25%;
+    text-align: center;
+    padding: 1rem;
+    background-color: transparent;
+    color: var(--color-white);
+    font-family: var(--exo);
+}
+
+.cards-container {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.card {
+    background-color: rgb(255, 255, 255, 0.025);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-radius: 1.5rem;
+    width: 15rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.card .car-brand {
+    background-color: transparent;
+}
+
+.card .car-brand h2 {
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.cards-container .card .car-image {
+    display: flex;
+    padding: 0;
+    justify-content: flex-end;
+    padding: 1.5rem 0;
+    background-color: transparent;
+}
+
+.cards-container .car-image img {
+    display: flex;
+    background-color: transparent;
+}
+
+.cards-container .card .feat {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.65rem;
+    grid-template-areas: "feat-sec feat-km" "feat-elec .";
+    background-color: transparent;
+}
+
+.cards-container .card .feat .feat-sec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.33rem;
+    font-size: 0.85rem;
+    background-color: transparent;
+}
+
+.cards-container .card .feat .feat-km {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.33rem;
+    font-size: 0.85rem;
+    background-color: transparent;
+}
+
+.cards-container .card .feat .feat-elec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.33rem;
+    font-size: 0.85rem;
+    background-color: transparent;
+}
+
+.cards-container .card .feat svg {
+    fill: var(--color-white);
+}
+
+.cards-container .card .price {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    background-color: transparent;
+}
+
+.cards-container .card .price svg {
+    fill: var(--color-white);
+}
+
+.cards-container .card .price button {
+    outline: none;
+    border: none;
+    background-color: var(--first-color);
+    padding: 1rem;
+    position: absolute;
+    right: 0rem;
+    bottom: 0rem;
+    border-radius: 1rem 0;
+}

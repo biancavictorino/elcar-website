@@ -1,7 +1,7 @@
 const modeToggleBtn = document.getElementById('mode-toggle');
 const body = document.body;
 const menuToggle = document.getElementById('menu-toggle');
-const headerNav = document.querySelector('.header-nav');
+const headerNav = document.querySelectorAll('.header-nav');
 
 modeToggleBtn.addEventListener('click', () => {
     body.classList.toggle('light-mode');
@@ -18,4 +18,8 @@ modeToggleBtn.addEventListener('click', () => {
         </svg>
         `;
       }
+});
+
+menuToggle.addEventListener('click', () => {
+  headerNav.classList.add('active');
 });
