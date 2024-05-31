@@ -5,6 +5,7 @@
     align-items: center;
     padding: 5rem;
     color: var(--color-white);
+    overflow-y: hidden;
 }
 
 .popular h1, h2, p, svg, img {
@@ -18,17 +19,25 @@
     background-color: transparent;
     color: var(--color-white);
     font-family: var(--exo);
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .cards-container {
-    align-items: stretch;
     display: flex;
     flex-direction: row;
+    align-items: stretch;
     flex-wrap: nowrap;
-    overflow-x: auto;
+    width: 60rem;
+    overflow-x: scroll;
     overflow-y: hidden;
     gap: 2rem;
     padding: 3rem;
+    scrollbar-width: none;
+}
+
+.cards-container::-webkit-scrollbar {
+    display: none;
 }
 
 .card {
@@ -127,4 +136,17 @@
     right: 0rem;
     bottom: 0rem;
     border-radius: 1rem 0;
+}
+
+/* Mobile View */
+@media only screen and (max-width: 767px) {
+    .popular .title {
+        width: 100%;
+        font-size: 0.75rem;
+    }
+
+    .cards-container {
+        width: 65rem;
+        gap: 2rem;
+    }
 }
