@@ -6,7 +6,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10rem;
+    padding: 8rem;
     gap: 5rem;
     color: var(--color-white);
     overflow: hidden;
@@ -20,6 +20,7 @@
     display: block;
     height: auto;
     width: 100%;
+    padding: 2rem;
 }
 
 
@@ -28,22 +29,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 30%;
     padding: 1rem;
     border-radius: 1rem;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.4);
     position: absolute;
-    bottom: 50px;
-    right: 50px;
+    bottom: 0.10rem;
+    right: 2rem;
 }
 
 .about .icon-content .icon-description p {
     background-color: transparent;
     text-align: center;
+    font-size: 0.85rem;
 }
 
 .about .icon-content .icon-description h1 {
     background-color: transparent;
+    font-size: 1.2rem;
 }
 
 .about .about-content {
@@ -72,6 +75,46 @@
     border-radius: 0.20rem;
 }
 
+@media only screen and (max-width: 767px) {
+    .about {
+        flex-direction: column;
+        margin: 0;
+        padding: 1.5rem;
+        gap: 4rem;
+    }
+
+    .about .icon-content .main-icon .inside-car {
+        height: 13rem;
+        width: 20rem;
+    }
+
+    .about .icon-content {
+        margin: 1rem;
+    }
+
+    .about .icon-content .icon-description h1 {
+        font-size: 1rem;
+    }
+
+    .about .icon-content .icon-description p {
+        font-size: 0.65rem;
+    }
+
+    .about .icon-content .icon-description {
+        gap: 0.65rem;
+    }
+
+    .about .about-content {
+        height: auto;
+        width: 20rem;
+        padding-bottom: 2rem;
+    }
+
+    .about .about-content p {
+        font-size: 0.85rem;
+        width: fit-content;
+    }
+}
 
 
 
