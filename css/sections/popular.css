@@ -146,6 +146,7 @@
 /* Mobile View */
 @media only screen and (max-width: 767px) {
     .popular {
+        height: auto;
         overflow-x: hidden;
         padding: 2rem;
     }
