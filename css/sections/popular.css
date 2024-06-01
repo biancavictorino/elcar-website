@@ -40,6 +40,11 @@
     display: none;
 }
 
+.card-background {
+    background:  radial-gradient(circle at top left, rgba(131, 142, 236, 0.2), transparent 45%);
+    border-radius: 1.5rem;
+}
+
 .card {
     background-color: rgb(255, 255, 255, 0.025);
     display: flex;
@@ -140,13 +145,22 @@
 
 /* Mobile View */
 @media only screen and (max-width: 767px) {
+    .popular {
+        overflow-x: hidden;
+        padding: 2rem;
+    }
+
     .popular .title {
-        width: 100%;
-        font-size: 0.75rem;
+        width: 90%;
+        font-size: 0.95rem;
     }
 
     .cards-container {
-        width: 65rem;
-        gap: 2rem;
+        gap: 1rem;
+        width: 20rem;
+    }
+
+    .card {
+        width: 12rem;
     }
 }
