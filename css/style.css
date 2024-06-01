@@ -4,6 +4,7 @@
 @import url('sections/hero.css');
 @import url('sections/about.css');
 @import url('sections/popular.css');
+@import url('sections/features.css');
 
 :root {
     --orbitron: "Orbitron", serif;
