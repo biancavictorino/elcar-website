@@ -1,0 +1,119 @@
+.featured {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem;
+    overflow: hidden;
+}
+
+.featured h1, p, img {
+    background-color: transparent;
+    color: var(--color-white);
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.filters .filter-container {
+    display: flex;
+    border-radius: 0.65rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(41, 41, 41, 0.6);
+    height: 2.8rem;
+    width: 2.8rem;
+}
+
+.filters .filter-container button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: gainsboro;
+}
+
+.filters .filter-container:hover {
+    background-color: var(--first-color);
+}
+
+.featured .card-background {
+    width: 17rem;
+    height: 20rem;
+}
+
+.featured .card-container .card {
+    background-color: rgb(255, 255, 255, 0.025);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    width: 12rem;
+    height: 16rem;
+    padding: 2rem;
+}
+
+.featured .card-container {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 55rem;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card-container .card .car-image {
+    display: flex;
+    padding: 0;
+    justify-content: flex-end;
+    padding: 1.5rem 0;
+    background-color: transparent;
+}
+
+.card-container .car-image img {
+    display: flex;
+    background-color: transparent;
+}
+
+.card-container .card .price {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    background-color: transparent;
+}
+
+.card-container .card .price svg {
+    fill: var(--color-white);
+}
+
+.card-container .card .price button {
+    outline: none;
+    border: none;
+    background-color: var(--first-color);
+    padding: 1rem;
+    position: absolute;
+    right: 0rem;
+    bottom: 0rem;
+    border-radius: 1rem 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .featured {
+        overflow: hidden;
+    }
+
+    .featured .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+

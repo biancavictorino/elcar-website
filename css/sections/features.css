@@ -62,7 +62,17 @@ div.feature:nth-child(3) {
     .features {
         height: auto;
         padding: 2rem;
+        max-width: 767px;
     }
+
+    .features img {
+        height: 32rem;
+        width: 23rem;
+    }
+
+
+
+
 }
 
 
