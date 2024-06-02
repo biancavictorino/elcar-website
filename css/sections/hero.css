@@ -93,7 +93,6 @@
 
 .hero-main {
     /* height: auto; */
-    height: 100vh;
     max-height: 100vh;
     display: flex;
     justify-content: center;
@@ -253,6 +252,10 @@
         display: flex;
     }
 
+    .hero-main {
+        padding: 5rem 4rem;
+    }
+
     .hero-main .title {
         display: flex;
         background-color: transparent;
@@ -296,6 +299,4 @@
         width: 3.5rem;
         padding: 0.1rem;
     }
-
-
 }

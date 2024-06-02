@@ -1,4 +1,5 @@
-.offer-section {
+.offer {
+    overflow: hidden;
     height: auto;
     display: flex;
     align-items: center;
@@ -10,15 +11,15 @@
     background-repeat: no-repeat;
     height: auto;
     padding: 2rem 13rem;
-    color: var(--color-white);
-
+    color: #fff;
 }
 
-.offer-section div  {
+.offer div  {
     background-color: transparent;
 }
 
 .offer-data {
+    color: #fff;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -34,13 +35,14 @@
     width: 85%;
     line-height: 1.9rem;
     font-weight: lighter;
+    color: #fff;
 }
 
 .offer-data button {
     outline: none;
     border: none;
     background-color: var(--first-color);
-    color: var(--color-white);
+    color: #fff;
     padding: 1rem;
     border-radius: 0.15rem;
 }
@@ -55,7 +57,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .offer-section {
+    .offer {
         overflow: hidden;
         flex-direction: column;
         padding: 2rem;

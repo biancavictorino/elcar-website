@@ -7,6 +7,9 @@
 @import url('sections/features.css');
 @import url('sections/featured.css');
 @import url('sections/offer.css');
+@import url('sections/logo.css');
+@import url('sections/footer.css');
+
 
 :root {
     --orbitron: "Orbitron", serif;
@@ -38,6 +41,9 @@ body {
     --container-color: #BABEC4;
     --body-color: #F1F2F3;
     --text-color: #111213;
+
+    --first-card-color: rgba(41, 41, 41, 0.6);
+    --second-card-color: rgba(255, 255, 255, 0.6);
 }
 
 .dark-mode {
@@ -48,5 +54,8 @@ body {
     --body-color: #0A0A0B;
     --container-color: #111213;
     --color-white: #FFFFFF;
+
+    --first-card-color: rgba(255, 255, 255, 0.4);
+    --second-card-color: rgb(255, 255, 255, 0.025);
 
 }

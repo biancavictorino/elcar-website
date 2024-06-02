@@ -47,7 +47,7 @@
 }
 
 .featured .card-container .card {
-    background-color: rgb(255, 255, 255, 0.025);
+    background-color: var(--second-card-color);
     display: flex;
     flex-direction: column;
     border-radius: 1.5rem;

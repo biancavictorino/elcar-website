@@ -46,7 +46,7 @@
 }
 
 .card {
-    background-color: rgb(255, 255, 255, 0.025);
+    background-color: var(--second-card-color);
     display: flex;
     flex-direction: column;
     flex-grow: 0;

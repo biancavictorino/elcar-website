@@ -1,0 +1,120 @@
+.footer {
+    overflow: hidden;
+    height: auto;
+    color: var(--color-white);
+    padding: 5rem 0 1rem 0;
+    overflow: hidden;
+    background:  radial-gradient(circle at top left, rgba(128, 128, 128, 0.8), transparent 25%), radial-gradient(circle at bottom right, rgba(97, 97, 97, 0.8), transparent 25%);
+}
+
+.footer h1, p, svg, a, img {
+    background-color: transparent;
+}
+
+.footer h1 {
+    font-size: 1.1rem;
+}
+
+.footer p {
+    line-height: 1.9rem;
+    color: var(--text-color);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    background-color: transparent;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10rem;
+    background-color: transparent;
+}
+
+.main-content {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: transparent;
+}
+
+div.main-content:nth-child(1) {
+    width: 20%;
+    padding-right: 8rem;
+}
+
+.main-content .main-logo {
+    height: 2rem;
+    width: 6rem;
+}
+
+.main-content a {
+    text-decoration: none;
+    color: var(--text-color);
+    width: auto;
+}
+
+.main-content a:hover {
+    color: var(--first-color);
+}
+
+.main-content .social-icons {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0;
+}
+
+.main-content .social-icons svg {
+    fill: var(--text-color);
+}
+
+.main-content .social-icons svg:hover {
+    fill: var(--first-color);
+}
+
+.footer .footer-container .copy-footer {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer .footer-container .copy-footer p {
+    background-color: transparent;
+    font-size:0.65rem;
+}
+
+.footer .footer-container .copy-footer img {
+    height: 1.5rem;
+    width: 4rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .footer-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        margin-left: 2rem;
+        gap: 2rem;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    div.main-content:nth-child(1) {
+        width: 100%;
+    }
+}
