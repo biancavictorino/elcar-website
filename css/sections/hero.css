@@ -78,10 +78,14 @@
 }
 
 .menu-toggle {
+    gap: 0.313rem;
     display: none;
     flex-direction: column;
-    gap: 0.313rem;
     cursor: pointer;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    z-index: 3;
 }
 
 .menu-toggle span {
@@ -232,23 +236,45 @@
     .header-nav {
         display: none;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         position: absolute;
-        top: 3.75rem;
-        right: 125rem;
-        background-color: white;
+        width: 100%;
+        height: 100%;
+        top: 0rem;
+        right: 0rem;
+        background-color: rgba(255, 255, 255, 0.99);
         padding: 0.625rem;
         border-radius: 0.5rem;
+        flex-direction: column;
+        text-align: center;
+        color: var(--text-color);
+        z-index: 100;
+        position: fixed;
+        gap: 0;
+        transition: right 3s ease-in-out;
+        color: var(--text-color);
+    }
+
+    #mode-toggle {
+        padding: 2rem;
+        fill: var(--first-color);
+    }
+
+    .header-nav .nav-link {
+        padding: 2rem;
+        color: var(--first-color);
     }
 
     .header-nav.active {
         display: flex;
     }
 
-    .menu-toggle {
-        display: flex;
+    .no-scroll {
+        overflow: hidden;
     }
 
-    .mobile-nav.active {
+    .menu-toggle {
         display: flex;
     }
 
