@@ -73,6 +73,23 @@
     color: var(--first-color);
 }
 
+.header-nav .close-button {
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    color: var(--first-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: 3s ease-in;
+}
+
+.header-nav .close-button:hover {
+    text-shadow: 0 0 20px rgba(65, 119, 220, 0.8), 0 0 30px rgba(65, 119, 220, 0.8);
+    color: var(--first-color);
+}
+
 .mobile-nav {
     display: none;
 }
@@ -254,6 +271,10 @@
         gap: 0;
         transition: right 3s ease-in-out;
         color: var(--text-color);
+    }
+
+    .header-nav .close-button {
+        display: flex;
     }
 
     #mode-toggle {

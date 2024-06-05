@@ -3,6 +3,7 @@ const body = document.body;
 const menuToggle = document.querySelector('.menu-toggle');
 const headerNav = document.querySelector('.header-nav');
 const navLink = document.querySelectorAll('.nav-link');
+const closeNavbar = document.querySelector('.close-button');
 
 modeToggleBtn.addEventListener('click', () => {
     body.classList.toggle('light-mode');
@@ -25,6 +26,10 @@ menuToggle.addEventListener('click', () => {
   headerNav.classList.toggle('active');
   body.classList.add('no-scroll');
 });
+
+const CloseNavbar = () => {
+  headerNav.classList.remove('active');
+}
 
 navLink.forEach(link => {
   link.addEventListener('click', () => {
